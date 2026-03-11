@@ -1,0 +1,110 @@
+body {
+    background-image: url(../images/under-sea-with-animal-and-coral-free-vector.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+.cover {
+    position: relative;
+}
+
+.size {
+    height: 200px;
+}
+
+.fish {
+    animation: swim 5s linear infinite;
+}
+
+.sea-animal {
+    transform: rotate(-30deg);
+    animation: swim2 9s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+.fish2 {
+    animation: swim3 7s linear infinite;
+    animation-direction: reverse;
+}
+
+.yellow {
+    animation: swim4 5s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+.crub {
+    animation: swim5 9s ease-in infinite;
+    animation-direction: reverse;
+}
+div {
+    position: absolute;
+}
+
+@keyframes swim {
+    0% {
+        top: 50px;
+        right: -200px;
+    }
+    50% {
+        top: 100px;
+        transform: rotate(-30deg);
+    }
+    100% {
+        right: 100%;
+    }
+}
+@keyframes swim2 {
+    0% {
+        top: 200px;
+        right: -200px;
+    }
+    50% {
+        top: 250px;
+        transform: rotate(30deg);
+    }
+    100% {
+        top: 200px;
+        right: 100%;
+    }
+}
+@keyframes swim3 {
+    0% {
+        top: 300px;
+        left: -200px;
+    }
+    50% {
+        top: 350px;
+        transform: rotate(-30deg);
+    }
+    100% {
+        top: 300px;
+        left: 100%;
+    }
+}
+@keyframes swim4 {
+    0% {
+        top: 400px;
+        left: -200px;
+    }
+    50% {
+        top: 450px;
+        transform: rotate(30deg);
+    }
+    100% {
+        top: 400px;
+        left: 100%;
+    }
+}
+@keyframes swim5 {
+    0% {
+        top: 500px;
+        right: -200px;
+    }
+    50% {
+        top: 550px;
+    }
+    100% {
+        top: 500px;
+        right: 100%;
+    }
+}
